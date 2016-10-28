@@ -99,7 +99,6 @@ int main(int argc, char* argv[])
                 }
                 
                 // write RGB triple to outfile
-                
                 for (int z = 0; z < n; z++)
                 {
                     triple.rgbtBlue = mod[j * 3];
@@ -134,13 +133,8 @@ int main(int argc, char* argv[])
         if (n < 1)
             ++i;
     }
-
-    // close infile
     fclose(inptr);
+   fclose(outptr);
 
-    // close outfile
-    fclose(outptr);
-
-    // that's all folks
-    return 0;
+  return 0;
 }
